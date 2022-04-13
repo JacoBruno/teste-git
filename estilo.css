@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'helvetica';
+    src: url('/font/helvetica/Helvetica.regular.ttf');
+}
+
+
+
+body {
+	font-family: 'Helvetica';
+	background-color: ghostwhite;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+header{
+	padding: 20px 0 0;
+}
+
+header h1 {
+	font-family: 'Merriweather';
+	color: black;
+	font-size: 3.5em;
+	font-weight: bold;
+	color: black;
+	position: absolute;
+	display: inline;
+	top: 20%;
+	margin-left: 20px;
+}
+
+
+
+header span {
+	color: black;
+	font-size: 2.5em;
+	display: inline;
+	font-style: italic;
+	position: relative;
+	left: 15%;
+}
+
+.box {
+	width: 80%;
+	margin: auto;
+	position: relative;
+}
+
+nav {
+	background-color: #2496ed;
+	margin: 10px 0 0;
+	padding: 15px 0;
+	position: relative;
+}
+
+.menu{
+	display: inline-block;
+}
+.menu li{
+	display: inline;
+	margin-left: 10px;	
+	color: white;
+	
+}
+
+.menu a:hover {
+	
+	color: black;
+	
+}
+
+.menu a {
+	
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+}
+
+.menu-especial{
+	display: inline-block;
+	float: right;
+}
+
+.menu-especial li {
+	display: inline;
+	margin-left: 10px;	
+	color: white;
+
+}
+
+.menu-especial a {
+	
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	
+	padding: 15px;
+}
+
+.menu-especial a:hover {
+	color: white;
+}
+
+.menu-especial li:last-child a {
+	background-color: ghostwhite;
+}
+
+.menu-especial li:last-child a:hover {
+	
+	color: #2496ed;
+}
+
+
+main {
+	margin: 50px 0;
+}
+
+.blog {
+	width: 800px;	
+	margin: 2% 0 0 0;	
+	position: relative;
+    z-index: 100;
+    display: flex;
+
+    
+}
+
+
+.blog-dados a {
+	color: #2496ed;
+	display: inline;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 7px;
+	/*background-color: black;*/
+	
+}
+
+.blog-dados p {
+	color: #555;
+	display: inline;
+	font-size: 12px;
+}
+
+.blog-img {	
+	flex: 1;
+	border-radius: 10px;
+}
+
+.blog-texto {
+	
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;	
+	flex: 2;
+	color: black;
+	line-height: 1.25em;
+}
+
+.blog-link {
+	color: black;
+	text-decoration: none;
+	float: right;
+	margin-top: 10px;
+	font-size: 18px;
+	
+	/*background-color: black;*/
+	padding: 5px;
+	color: #2496ed;
+	font-weight: bold;
+}
+
+.blog h2 {
+	color: black;
+	font-size: 1.5em;
+	/*border-bottom: 2px solid;*/
+	border-color: #2496ed;
+	
+	padding: 5px 0;
+	text-align: left;
+	margin-top: 15px;
+}
+
+.blog p {
+	
+	text-align: left;
+	margin-top: 10px;
+}
+
+footer {
+	background-color: #2496ed;
+	padding: 25px 0;
+	text-align: center;
+}
+
+.copyright {
+	color: white;
+	margin: 20px 0;
+
+}
+
+@media screen and (max-width:  480px) {
+	.box{
+		width: 90%;
+
+	}
+	header a {
+		margin: 10px auto;
+		display: inline-block;
+		width: 90%;
+		text-align: center;
+	}
+
+	header img{
+		display: inline;
+	}
+	header h1 {
+		font-size: 2em;
+		position: static;
+		margin: 20px auto;
+		display: initial;
+		text-align: center;
+	}
+
+	header span {
+		font-size: 1.5em;
+		display: initial;
+	}
+
+	.blog {
+		width: 100%;
+		display: block;
+	}
+}

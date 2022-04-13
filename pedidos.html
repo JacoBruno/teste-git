@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Somos Fortes</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="estilo-pedidos.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond&family=Merriweather&family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	</head>
+	<body>
+		<header>			
+			<div class="box">						
+				<a href="index.html">
+					<img src="img/logo_letras_branco.png" width="100px" height="100px">
+					<h1>Somos Fortes</h1>
+				</a>
+				<span>e já vencemos...</span>												
+			</div>
+			<nav>
+				<div class="box">
+					<ul class="menu">
+						<li><a href="">Novidades</a></li>
+						<li><a href="">Biblioteca</a></li>
+						<li><a href="">Documentarios</a></li>												
+					</ul>
+					<ul class="menu-especial">
+						<li><a href="">Manifesto</a></li>
+						<li><a href="pedidos.html">Pedidos de oração</a></li>																		
+					</ul>	
+				</div>									
+			</nav>		
+		</header>		
+		<main> 
+			<div class="box">
+				<h1>Pedido de Oração</h1>
+				<form>
+
+					<label for="nome">Nomes e Sobrenome</label>
+					<input class="input-padrao" type="text" name="nome" id="nome" required placeholder="Nome completo">
+					<label for="email">Email</label>
+					<input class="input-padrao" type="email" name="email" id="email" required placeholder="seu-email@dominio.com">
+					<label for="telefone">Telefone</label>
+					<input class="input-padrao" type="tel" name="telefone" id="telefone" required placeholder="(xx)xxxx-xxxx">
+					<label for="pedido"></label>
+					<textarea class="input-padrao" id="pedido" required></textarea>
+
+					<fieldset>
+						<legend>Gostaria que entrassemos em contato?</legend>
+						<label for="radio-sim"><input type="radio" value="sim" name="contato" id="radio-sim">Sim</label>
+						<label for="radio-nao"><input type="radio" value="nao" name="contato" id="radio-nao" checked>Não</label>				
+						<label class="checkbox"><input type="checkbox" name="">Quer aceitar Jesus como seu salvador?</label>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Qual melhor horário para entrarmos em contato?</legend>
+						<select>
+							<option>Manhã</option>
+							<option>Tarde</option>
+							<option>Noite</option>
+						</select>
+					</fieldset>
+					
+
+					<input type="submit" class="form-botao">
+				</form>
+			</div>
+					
+		</main>
+		<footer>
+			<img src="img/logo_letras_branco.png" width="75px">
+			<p class="copyright">&copy; Copyright Somos Fortes - 2022</p>
+		</footer>		
+	</body>	
+</html>
